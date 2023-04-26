@@ -4,7 +4,7 @@
             <div class="chat-sidebar"></div>
             <div class="chat-container">
                 <div class="chat-header">
-                    Header
+                    <nuxt-link to="/create">Header</nuxt-link>
                 </div>
                 <div class="chat-messages">
                     <n-scrollbar class="chat-messages-scrollbar" style="" trigger="hover">
@@ -61,15 +61,15 @@ const messages = ref([
 //     messages.value = localStorage.getItem('chatrec')
 // }
 
-// onMounted(() => {
-//     fetch('http://localhost:8081/getChat?id=ad7e45ff-b2ef-42fc-84b4-46d30221c33a')
-//         .then((response) => response.json())
-//         .then((data) => {
-//             messages.value = data
-//             console.log("[聊天记录:]");
-//             console.log(data);
-//         })
-// })
+onMounted(() => {
+    fetch('http://localhost:8081/getChat?id=ad7e45ff-b2ef-42fc-84b4-46d30221c33a')
+        .then((response) => response.json())
+        .then((data) => {
+            messages.value = data
+            console.log("[聊天记录:]");
+            console.log(data);
+        })
+})
 
 
 
