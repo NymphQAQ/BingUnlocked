@@ -1,5 +1,5 @@
 <template>
-    
+
         <div class="chat">
             <div class="chat-sidebar"></div>
             <div class="chat-container">
@@ -7,18 +7,18 @@
                     <nuxt-link to="/create">Header</nuxt-link>
                 </div>
                 <div class="chat-messages">
-                    <n-scrollbar class="chat-messages-scrollbar" style="" trigger="hover">
+<!--                    <n-scrollbar class="chat-messages-scrollbar" style="" trigger="hover">-->
                         <div v-for="message in messages" :key="message.id"
                             :class="{ 'message-right': message.isMe, 'message-left': !message.isMe }">
                             <div class="message-content">
-                         
-                      
+
+
                                 <span v-html="message.content"></span>
-                    
+
 
                             </div>
                         </div>
-                    </n-scrollbar>
+<!--                    </n-scrollbar>-->
 
                 </div>
                 <div class="chat-buttom">
@@ -32,13 +32,13 @@
 
             </div>
         </div>
-   
+
 </template>
-  
+
 <script setup>
 import { ref, watch } from 'vue';
 import { fetchEventSource } from "@microsoft/fetch-event-source";
-import { NScrollbar, NSpace, NInput } from 'naive-ui';
+// import { NScrollbar, NSpace, NInput } from 'naive-ui';
 import { v4 as uuidv4 } from 'uuid'
 // import hljs from 'highlight.js'
 // import hljsVuePlugin from '@highlightjs/vue-plugin'
@@ -166,7 +166,7 @@ function scrollToBottom() {
 
 
 </script>
-  
+
 <style scoped lang="scss">
 // * {
 //     border: 1px darkgray solid;
