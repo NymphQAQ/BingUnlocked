@@ -8,7 +8,7 @@ export default defineNuxtConfig({
         port: 8848
     },
     modules: [
-        '@nuxtjs/tailwindcss'
+        '@nuxtjs/tailwindcss',
     ]
 
 })
