@@ -15,7 +15,7 @@ onMounted(()=> {
             //安卓app的scheme协议
             window.location.href = 'wechat://u.wechat.com/MNSaVUZFA8mrtaZrA0rcWjk';
             setTimeout(function () {
-                let hidden = window.document.hidden 
+                let hidden = window.document.hidden
                 if (typeof hidden == "undefined" || hidden == false) {
                     //应用宝下载地址 (emmm 找不到淘宝应用宝的地址，这里放的是 lucky coffee 地址)
                     window.location.href = "https://a.app.qq.com/o/simple.jsp?pkgname=com.lucky.luckyclient";
@@ -34,7 +34,7 @@ onMounted(()=> {
             //     }
             // }, 2000);
         }
-        // window.location.href = 'wechat://u.wechat.com/MNSaVUZFA8mrtaZrA0rcWjk'
+        window.location.href = "weixin://dl/add"
     }
 })
 
@@ -52,7 +52,7 @@ function openApp() {
             //安卓app的scheme协议
             window.location.href = 'wechat://';
             setTimeout(function () {
-                let hidden = window.document.hidden 
+                let hidden = window.document.hidden
                 if (typeof hidden == "undefined" || hidden == false) {
                     //应用宝下载地址 (emmm 找不到淘宝应用宝的地址，这里放的是 lucky coffee 地址)
                     window.location.href = "https://a.app.qq.com/o/simple.jsp?pkgname=com.lucky.luckyclient";
