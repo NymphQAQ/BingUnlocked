@@ -3,7 +3,7 @@ import { ref, reactive } from 'vue'
 import { v4 as uuidv4 } from 'uuid'
 
 onMounted(() => {
-    fetch('https://www.bing.com/turing/conversation/create',{
+    fetch('/api/turing/conversation/create',{
         method: 'GET',
         headers: {
             'accept': 'application/json',
@@ -32,6 +32,14 @@ onMounted(() => {
     }).then((response) => response.json() )
     .then(data => console.log(data))
 })
+
+function GET(req) {
+    console.log(req);
+}
+
+function requestBing() {
+
+}
 
 </script>
 

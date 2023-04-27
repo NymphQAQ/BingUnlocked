@@ -4,7 +4,7 @@
             <div class="chat-sidebar"></div>
             <div class="chat-container">
                 <div class="chat-header">
-                    <nuxt-link to="/openApp">Header</nuxt-link>
+                    <nuxt-link to="/create">Header</nuxt-link>
                 </div>
                 <div class="chat-messages">
                     <n-scrollbar class="chat-messages-scrollbar" style="" trigger="hover">

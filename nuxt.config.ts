@@ -5,10 +5,19 @@ export default defineNuxtConfig({
     },
     devServer: {
         host: '0.0.0.0',
-        port: 8848
+        port: 8848,
+
     },
     modules: [
         '@nuxtjs/tailwindcss',
-    ]
+    ],
+    nitro: {
+        devProxy: {
+            '/api': {
+                target: 'https://www.bing.com',
+                changeOrigin: true
+            }
+        }
+    }
 
 })
